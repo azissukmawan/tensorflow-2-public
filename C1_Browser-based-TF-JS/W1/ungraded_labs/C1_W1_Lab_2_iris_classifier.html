@@ -3,7 +3,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
     <script lang="js">
         async function run(){
-            const csvUrl = '/data/iris.csv';
+            const csvUrl = 'data/iris.csv';
             const trainingData = tf.data.csv(csvUrl, {
                 columnConfigs: {
                     species: {
@@ -41,7 +41,7 @@
             // Test Cases:
             
             // Setosa
-            const testVal = tf.tensor2d([4.4, 2.9, 1.4, 0.2], [1, 4]);
+            const testVal = tf.tensor2d([6.2, 3.4, 5.4, 2.3], [1, 4]);
             
             // Versicolor
             // const testVal = tf.tensor2d([6.4, 3.2, 4.5, 1.5], [1, 4]);
